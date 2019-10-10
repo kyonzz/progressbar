@@ -1,0 +1,20 @@
+{
+  "name": "progressbar-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "parcel watch lib/index.tsx",
+    "build": "parcel build lib/index.tsx --global progressbar",
+    "start-demo": "parcel examples/src/index.html --out-dir examples/dist --open",
+    "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
