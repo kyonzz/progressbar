@@ -1,21 +1,21 @@
 {
   "name": "progressbar-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "progressbar-ui": "^1.0.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "styled-components": "^4.4.0"
+    "progressbar-ui": "^1.0.2"
   },
   "scripts": {
-    "start": "parcel watch lib/index.tsx",
+    "start-demo": "parcel watch lib/index.tsx",
     "build": "NODE_ENV=production parcel build lib/index.tsx --global progressbar",
-    "start-demo": "parcel examples/src/index.html --out-dir examples/dist --open",
+    "start": "parcel examples/src/index.html --out-dir examples/dist --open",
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
   "devDependencies": {
-    "typescript": "^3.6.3"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0",
+    "typescript": "^3.6.4"
   }
 }
