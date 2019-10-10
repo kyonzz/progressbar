@@ -1,10 +1,10 @@
 {
   "name": "progressbar-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "progressbar-ui": "^1.0.2"
+    "progressbar-ui": "^1.0.3"
   },
   "scripts": {
     "start-demo": "parcel watch lib/index.tsx",
@@ -13,9 +13,11 @@
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
   "devDependencies": {
+    "typescript": "^3.6.4"
+  },
+  "peerDependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "styled-components": "^4.4.0",
-    "typescript": "^3.6.4"
+    "styled-components": "^4.4.0"
   }
 }
