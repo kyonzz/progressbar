@@ -1,6 +1,6 @@
 {
   "name": "progressbar-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./dist/lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,9 @@
     "start": "parcel examples/index.html --out-dir examples/dist",
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
-  "dependencies": {},
+  "dependencies": {
+    "progressbar-ui": "^1.0.6"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
