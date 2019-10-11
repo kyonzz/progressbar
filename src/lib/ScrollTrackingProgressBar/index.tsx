@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-export const Progress = styled.div<{ color?: string; scroll?: string }>`
+const Progress = styled.div<{ color?: string; scroll?: string }>`
   position: fixed;
   background: linear-gradient(
     to right,
-    rgba(250, 224, 66, 0.8) ${props => props.scroll},
+    rgba(250, 224, 66, 0.8) ${(props: any) => props.scroll},
     transparent 0
   );
   width: 100%;
@@ -22,6 +22,7 @@ export const ScrollTrackingProgressBar: React.FC = () => {
     calculateScrollDistance();
 
     const handleScroll = () => {
+      // console.log('xu ly vai lon')
       requestId = requestAnimationFrame(() => {
         // Calculates the scroll distance
         calculateScrollDistance();
@@ -58,7 +59,7 @@ export const ScrollTrackingProgressBar: React.FC = () => {
     );
   };
 
+  // const scroll = 10;
+
   return <Progress scroll={`${scroll}%`} />;
 };
-
-export default ScrollTrackingProgressBar;

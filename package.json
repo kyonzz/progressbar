@@ -10,7 +10,7 @@
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
   "dependencies": {
-    "progressbar-ui": "^1.0.6"
+    "progressbar-ui": "^1.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

@@ -1,17 +1,21 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
     "jsx": "react",
-    "baseUrl": "./lib",
-    "paths": {
-      "~*": [
-        "./*"
-      ]
-    },
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": "./lib",
+    // "paths": {
+    //   "~*": [
+    //     "./*"
+    //   ]
+    // },
     "typeRoots": [
       "node_modules/@types"
     ]
-  },
-  "include": [
-    "lib/**/*"
-  ]
+  }
 }
