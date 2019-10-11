@@ -1,20 +1,32 @@
 {
   "name": "progressbar-ui",
-  "version": "1.0.5",
-  "main": "index.js",
+  "version": "1.0.6",
+  "main": "./dist/lib/index.js",
   "license": "MIT",
   "scripts": {
-    "start-demo": "parcel watch lib/index.tsx",
-    "build": "NODE_ENV=production parcel build lib/index.tsx --global progressbar",
-    "start": "parcel examples/src/index.html --out-dir examples/dist --open",
+    "start-demo": "NODE_ENV=production parcel watch lib/index.tsx",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "start": "parcel examples/index.html --out-dir examples/dist",
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@types/react": "^16.9.5",
+    "@types/styled-components": "^4.1.19",
+    "babel-loader": "^8.0.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "styled-components": "^4.4.0",
-    "typescript": "^3.6.4"
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
 }
