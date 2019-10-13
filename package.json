@@ -9,9 +9,7 @@
     "start": "parcel examples/index.html --out-dir examples/dist",
     "build-demo": "parcel build examples/src/index.html --out-dir examples/dist --public-url ./"
   },
-  "dependencies": {
-    "progressbar-ui": "^1.0.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
@@ -21,7 +19,6 @@
     "babel-loader": "^8.0.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "styled-components": "^4.4.0",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.4",
     "webpack": "^4.41.0",

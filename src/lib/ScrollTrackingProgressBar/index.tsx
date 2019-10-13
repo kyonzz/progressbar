@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 
-const Progress = styled.div<{ color?: string; scroll?: string }>`
-  position: fixed;
-  background: linear-gradient(
-    to right,
-    rgba(250, 224, 66, 0.8) ${(props: any) => props.scroll},
-    transparent 0
+const Progress = ({ percents }: { percents: string }) => {
+  const background = `linear-gradient(to right, rgba(250, 224, 66, 0.8) ${percents}, transparent 0)`;
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        width: "100%",
+        height: 5,
+        zIndex: 3,
+        background: background
+      }}
+    />
   );
-  width: 100%;
-  height: 4px;
-  z-index: 3;
-`;
+};
 
 export const ScrollTrackingProgressBar: React.FC = () => {
   const [scroll, setScroll] = useState<number>(0);
@@ -59,7 +62,5 @@ export const ScrollTrackingProgressBar: React.FC = () => {
     );
   };
 
-  // const scroll = 10;
-
-  return <Progress scroll={`${scroll}%`} />;
+  return <Progress percents={`${scroll}%`} />;
 };

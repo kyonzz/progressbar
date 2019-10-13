@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ScrollTrackingProgressBar } from "progressbar-ui"; // from lib
+// import { ScrollTrackingProgressBar } from "progressbar-ui"; // from lib
 // import { ScrollTrackingProgressBar } from "./lib"; //from built file
-// import { ScrollTrackingProgressBar } from "../src/lib"; // from src
+import { ScrollTrackingProgressBar } from "../src/lib"; // from src
 import "./index.css";
 
 const App = () => (
